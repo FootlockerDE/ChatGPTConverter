@@ -1,0 +1,22 @@
+#contextInput {
+    height: 200px;
+    width: 400px;
+}
+
+#questionInput {
+    height: 200px;
+    width: 400px;
+}
+
+.input {
+    justify-content: center;
+}
+
+textarea {
+    resize: none;
+    display: block;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
