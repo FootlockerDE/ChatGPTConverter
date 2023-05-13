@@ -11,7 +11,10 @@ function getInput() {
     multipleChoiceInput = document.getElementById("multipleChoiceInput").value
     console.log(questionInput)
     console.log(contextInput)
-    altermultipleChoiceInput()
+    if (multipleChoiceInput !== '') { //if multiple choice is empty no a) b) c)... will be displayed
+        altermultipleChoiceInput()
+    }
+    
     setOutput()
     
    
@@ -19,6 +22,10 @@ function getInput() {
 // adds a) b) c) d) e)
 function altermultipleChoiceInput() {
     multipleChoiceInput = multipleChoiceInput.split(/\r?\n/)
+    if (multipleChoiceInput[1] === undefined) {
+        multipleChoiceInput[1] = ''
+        
+    }
     if (multipleChoiceInput[2] === undefined) {
         multipleChoiceInput[2] = ''
         
@@ -36,7 +43,7 @@ function altermultipleChoiceInput() {
 }
 
 function setOutput() {
-    let textOutput = (contextInput + '\n' + '\n' 
+    let textOutput = ('Wir befinden uns in der Statistik' + '\n' + '\n' +contextInput + '\n' + '\n' 
     + multipleChoiceInput + '\n' + '\n' +
      questionInput + '\n' + '\n' +'Bitte gebe mir keine Erklärung' + '\n' + '\n' 
      + 'Es müssen  alle Teile der Aussage oder Antwortmöglichkeit wahr sein, damit diese als wahr gilt.'
