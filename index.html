@@ -14,14 +14,19 @@
         <label for="contextInput" >Input Context</label>
         <textarea id="contextInput" rows="5" cols="60" name="contextInput" placeholder="Enter text"></textarea>
         <br>
+        <label for="multipleChoiceInput" >Input Answers</label>
+        <textarea id="multipleChoiceInput" rows="5" cols="60" name="multipleChoiceInput" placeholder="Enter text"></textarea>
+        <br>
         <label for="questionInput" >Input Question</label>
         <textarea id="questionInput" rows="5" cols="60" name="questionInput" placeholder="Enter text"></textarea>
-        <button class="submitQuestion" onclick="getInput()">Submit</button>   
+        <button class="submitQuestion" onclick="convert()">Submit</button>   
+
     </div>
     <br>
     <div class="output">
         <label for="output">Output (copy to ChatGPT)</label>
         <textarea id="output" rows="10" cols="60" name="output" placeholder="Enter text"></textarea>
+        <button id="copyButton" onclick="copy()">Copy Text</button>
     </div>
     
 </body>
