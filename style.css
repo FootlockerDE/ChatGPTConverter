@@ -1,17 +1,3 @@
-#contextInput {
-    height: 200px;
-    width: 400px;
-}
-
-#questionInput {
-    height: 200px;
-    width: 400px;
-}
-
-.input {
-    justify-content: center;
-}
-
 textarea {
     resize: none;
     display: block;
@@ -19,4 +5,60 @@ textarea {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
   }
+
+button {
+    width: 405px;
+    margin-top: 5px;
+    transition-duration: 0.7s;
+    border-color: lightgrey;
+    border-style: hidden;
+}
+
+button:hover {
+    background-color: lightblue;
+
+
+}
+
+#contextInput {
+    height: 150px;
+    width: 400px;
+}
+
+#questionInput {
+    height: 100px;
+    width: 400px;
+}
+
+#multipleChoiceInput {
+    width: 400px;
+}
+
+#output {
+    width: 400px;
+}
+
+
+
+#output, #multipleChoieInput, #questionInput, #contextInput {
+     
+}
+
+.input {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.output {
+
+}
+
+.globalWrapper {
+   
+}
